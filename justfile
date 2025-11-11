@@ -11,8 +11,9 @@ repo:
 [group("Repo")]
 [doc("Remove all build files.")]
 clean:
-  rm -rf ./cpp/ \
-  && rm -rf ./src/generated/
+  rm -rf ./cpp/
+  rm -rf ./src/generated/
+  rm -rf ./lib/
 
 [group("Submodule")]
 [doc("Initialize bdk-ffi submodule to committed hash.")]
