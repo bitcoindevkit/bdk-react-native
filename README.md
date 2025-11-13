@@ -60,6 +60,9 @@ npm install
 
 # Run the app
 npm run android  # or npm run ios
+
+# See tests results in the emulator or capture the logs from your shell
+adb logcat -s ReactNativeJS | tee tests.log
 ```
 
 ## Workflow for testing library changes
