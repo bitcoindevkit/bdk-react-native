@@ -40,6 +40,12 @@ android.iml
 
 # Cocoapods
 example/ios/Pods
+example/ios/*.xcworkspace
+
+# Bundler (not needed if using Homebrew CocoaPods)
+example/Gemfile.lock
+example/.bundle
+example/vendor
 
 # node.js
 node_modules/
@@ -92,3 +98,7 @@ temp/
 
 # tests
 tests.log
+
+
+# Generated xcframework
+BdkRnFramework.xcframework
