@@ -45,12 +45,35 @@ build-android:
   yarn ubrn:android --config ubrn.config.yaml
 
 [group("Build")]
-[doc("Build the tarball for Android.")]
+[doc("Build the tarball for Android only.")]
+build-tarball-android:
+  yarn ubrn:android --config ubrn.config.yaml
+  npm pack
+
+[group("Build")]
+[doc("Build iOS library.")]
+build-ios:
+  yarn ubrn:ios --config ubrn.config.yaml
+
+[group("Build")]
+[doc("Build the tarball for iOS only.")]
+build-tarball-ios:
+  yarn ubrn:ios --config ubrn.config.yaml
+  npm pack
+
+[group("Build")]
+[doc("Build the release tarball with both iOS and Android.")]
 build-tarball:
   yarn ubrn:android --config ubrn.config.yaml
+  yarn ubrn:ios --config ubrn.config.yaml
   npm pack
 
 [group("Examples")]
 [doc("Launch Android example app.")]
 launch-android:
   cd example && npm install && npm run android
+
+[group("Examples")]
+[doc("Launch iOS example app.")]
+launch-ios:
+  cd example && npm install && cd ios && pod install && cd .. && npm run ios
