@@ -27,6 +27,9 @@ To build the library and start testing locally, you must have:
 
 The `example/` directory contains a full-featured example wallet app. The easiest way to get started is to download a pre-built tarball from our [GitHub Releases](https://github.com/bitcoindevkit/bdk-rn/releases).
 
+**Prerequisites for iOS:**
+- CocoaPods >= 1.13: `brew install cocoapods`
+
 ```shell
 # Clone the repo
 git clone git@github.com:bitcoindevkit/bdk-rn.git
@@ -52,19 +55,23 @@ npm run android   # In terminal 2 (or npm run ios for iOS)
 
 If you need to modify the library or build from source, you must have the Rust toolchain installed:
 
+**Prerequisites:**
+- Rust toolchain (stable 1.90.0+)
+- `just` CLI tool: https://github.com/casey/just
+- `cargo-ndk`: `cargo install cargo-ndk`
+- For iOS: CocoaPods >= 1.13: `brew install cocoapods`
+
 ```shell
 # Clone the repo and install prerequisites
 git clone git@github.com:bitcoindevkit/bdk-rn.git
 cd bdk-rn
-cargo install cargo-ndk
 
-# Install compilation targets, for example:
+# Install compilation targets
 rustup target add aarch64-linux-android aarch64-apple-ios aarch64-apple-ios-sim
 
-# Build the library and create tarball
+# Build the library and create tarball (includes both Android and iOS)
 just rename-library
-just build-android
-npm pack  # Creates bdk-rn-VERSION.tgz
+just build-tarball  # Builds both platforms and creates bdk-rn-VERSION.tgz
 
 # Install in the example app
 cd example
