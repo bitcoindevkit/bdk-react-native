@@ -6,7 +6,7 @@
 [group("Repo")]
 [doc("Open repo on GitHub in your default browser.")]
 repo:
-  open https://github.com/thunderbiscuit/bdk-react-native
+  open https://github.com/thunderbiscuit/bdk-rn
 
 [group("Repo")]
 [doc("Remove all build files.")]
@@ -67,13 +67,3 @@ build-tarball:
   yarn ubrn:android --config ubrn.config.yaml
   yarn ubrn:ios --config ubrn.config.yaml
   npm pack
-
-[group("Examples")]
-[doc("Launch Android example app.")]
-launch-android:
-  cd example && npm install && npm run android
-
-[group("Examples")]
-[doc("Launch iOS example app.")]
-launch-ios:
-  cd example && npm install && cd ios && pod install && cd .. && npm run ios
