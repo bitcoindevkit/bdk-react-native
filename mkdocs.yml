@@ -1,6 +1,6 @@
 site_name: BDK React Native
 site_description: React Native language bindings for the Bitcoin Development Kit.
-# site_url: https://bitcoindevkit.org
+site_url: https://bitcoindevkit.github.io/bdk-rn/
 repo_url: https://github.com/bitcoindevkit/bdk-rn
 repo_name: bitcoindevkit/bdk-rn
 
@@ -21,7 +21,7 @@ theme:
 
 nav:
   - Overview: index.md
-  - Getting Started: getting-started.md
+  - Example Apps: example-apps.md
   - Development: development.md
   - Testing: testing.md
   - Notes: notes.md

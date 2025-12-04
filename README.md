@@ -1,6 +1,6 @@
 # Bitcoin Dev Kit — React Native
 
-React Native language bindings for the [Bitcoin Development Kit](https://bitcoindevkit.org/).
+React Native language bindings for the [Bitcoin Development Kit](https://bitcoindevkit.org/). Read our [documentation for this library here](https://bitcoindevkit.github.io/bdk-rn/).
 
 The code in this repository is mostly comprised of:
 
@@ -10,6 +10,10 @@ The code in this repository is mostly comprised of:
 - Docs
 
 The core Rust code that is exposed to the React Native language bindings actually resides in the [bdk-ffi](https://github.com/bitcoindevkit/bdk-ffi) repository. This repo pulls it in as a submodule.
+
+## Exploring the Example Apps
+
+To take a look at the API exposed in this library, you can run our example applications. [Read the docs on this here](https://bitcoindevkit.github.io/bdk-rn/example-apps/).
 
 ## Notes for developers
 
@@ -22,34 +26,6 @@ To build the library and start testing locally, you must have:
 - The [just](https://github.com/casey/just) cli tool
 - Initiated the submodule (`just submodule-init`)
 - Installed your Rust compilation targets
-
-## Running the example app (using the pre-built tarball)
-
-The `example/` directory contains a full-featured example wallet app. The easiest way to get started is to download a pre-built tarball from our [GitHub Releases](https://github.com/bitcoindevkit/bdk-rn/releases).
-
-**Prerequisites for iOS:**
-- CocoaPods >= 1.13: `brew install cocoapods`
-
-```shell
-# Clone the repo
-git clone git@github.com:bitcoindevkit/bdk-rn.git
-cd bdk-rn
-
-# Download the pre-built tarball from GitHub releases and add it to the root of this repository
-
-# Install dependencies in the example app
-cd example
-npm install
-# Note: The tarball is already referenced in package.json as file:../bdk-rn-VERSION.tgz
-# Make sure the version matches.
-
-# For iOS, also install pods
-cd ios && pod install && cd ..
-
-# Start the example app
-npm run start     # In terminal 1
-npm run android   # In terminal 2 (or npm run ios for iOS)
-```
 
 ## Building the library from source
 
