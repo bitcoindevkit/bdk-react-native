@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://bitcoindevkit.github.io/bdk-rn/</loc>
+         <lastmod>2025-12-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bitcoindevkit.github.io/bdk-rn/build/</loc>
+         <lastmod>2025-12-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bitcoindevkit.github.io/bdk-rn/example-apps/</loc>
+         <lastmod>2025-12-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bitcoindevkit.github.io/bdk-rn/notes/</loc>
+         <lastmod>2025-12-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
